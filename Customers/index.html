@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Customers</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="bankName">
+                    <a href='../Home/index.html'><h1>SPARKS Bank</h1></a>
+                </div>
+                <div class="home">
+                    <a href='../Home/index.html'><h1>Home</h1></a>
+                </div>
+            </div>
+            <div class="main">
+                <div class="details">
+                    <h1>Name : Akhil</h1>
+                    <h2>Bank Balance : $<span id='myBalance'>50000</span></h2>
+                    <div class="buttons">
+                        <button id="sendButton">Send Money</button>
+                        <button id="transactionButton">See All Transactions</button>
+                    </div>
+                </div>
+                <table id='customers'>
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Name</th>
+                            <th>E-mail</th>
+                            <th>Gender</th>
+                            <th>Bank Balance(in $)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class='sno'>1.</td>
+                            <td class='name'>Ramu</td>
+                            <td class='email'>ramu123@gmail.com</td>
+                            <td class='gender'>Male</td>
+                            <td class='balance'>75000</td>
+                        </tr>
+                        <tr>
+                            <td class='sno'>2.</td>
+                            <td class='name'>Keerthana</td>
+                            <td class='email'>keerthana@gmail.com</td>
+                            <td class='gender'>Female</td>
+                            <td class='balance'>58000</td>
+                        </tr>
+                        <tr>
+                            <td class='sno'>3.</td>
+                            <td class='name'>Suresh</td>
+                            <td class='email'>suresh@gmail.com</td>
+                            <td class='gender'>Male</td>
+                            <td class='balance'>30000</td>
+                        </tr>
+                        <tr>
+                            <td class='sno'>4.</td>
+                            <td class='name'>Vamsi</td>
+                            <td class='email'>vamsi143@gmail.com</td>
+                            <td class='gender'>Male</td>
+                            <td class='balance'>65000</td>
+                        </tr>
+                        <tr>
+                            <td class='sno'>5.</td>
+                            <td class='name'>Sheela</td>
+                            <td class='email'>sheela@gmail.com</td>
+                            <td class='gender'>Female</td>
+                            <td class='balance'>40000</td>
+                        </tr>
+                        <tr>
+                            <td class='sno'>6.</td>
+                            <td class='name'>Manoj</td>
+                            <td class='email'>manoj666@gmail.com</td>
+                            <td class='gender'>Male</td>
+                            <td class='balance'>60000</td>
+                        </tr>
+                        <tr>
+                            <td class='sno'>7.</td>
+                            <td class='name'>Sameer</td>
+                            <td class='email'>sameer000@gmail.com</td>
+                            <td class='gender'>Male</td>
+                            <td class='balance'>45000</td>
+                        </tr>
+                        <tr>
+                            <td class='sno'>8.</td>
+                            <td class='name'>Priyanka</td>
+                            <td class='email'>priyanka567@gmail.com</td>
+                            <td class='gender'>Female</td>
+                            <td class='balance'>35000</td>
+                        </tr>
+                        <tr>
+                            <td class='sno'>9.</td>
+                            <td class='name'>Kiran</td>
+                            <td class='email'>kiran@gmail.com</td>
+                            <td class='gender'>Male</td>
+                            <td class='balance'>40000</td>
+                        </tr>
+                        <tr>
+                            <td class='sno'>10.</td>
+                            <td class='name'>Ramya</td>
+                            <td class='email'>ramya@gmail.com</td>
+                            <td class='gender'>Female</td>
+                            <td class='balance'>62000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- The Modal1 -->
+            <div id="myModal1" class="modal1">
+                <!-- Modal content -->
+                <div class="modal1-content">
+                    <div class="modal1-body">
+                        <span id="close1">&times;</span>
+                        <div class="content">
+                            <input class='receiver'type='text' placeholder="Enter the name of the Recipient">
+                            <input class='amount' type='text' placeholder="Enter the Amount to Send">
+                            <button class="sendMoneyButton">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- The Modal2 -->
+            <div id="myModal2" class="modal2">
+                <!-- Modal content -->
+                <div class="modal2-content">
+                    <div class="modal2-body">
+                        <span id="close2">&times;</span>
+                        <div class="tableContent content">
+                            
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,13 +1,13 @@
-# BASIC-BANKING-SYSTEM
+# BASIC BANKING SYSTEM
 
-Tech Stack used : HTML, CSS, JavaScript
+Tech Stack Used : HTML,CSS,JAVASCRIPT
 
-Description - An Application that allows users to perform monetary money transactions with multiple users and also record their transactions/ banking activities.
-
-1. A dummy data for up to 10 customers
-
-2. Customers table with basic fields such as name, email, current balance, etc.
-
-3. Transaction status
-
-4. Transfer table/ Transaction History which records all the transactions
+FEATURES:
+1) TRANSACT AMOUNT TO ANY OF THE GIVEN CUSTOMERS.
+2) MINIMUM ACCOUNT BALANCE SHOULD BE 500.
+3) SUCCESSFUL ALERT WILL BE SHOWN AFTER A TRANSACTION IS SUCCESSFULLY       PROCESSED.
+4) IF USERNAME IS NOT FOUND USER NOT FOUND ERROR WILL BE SHOWN IN ALERT BOX.
+5) ALL TRANSACTIONS DONE CAN BE SEEN IN TABULAR FORM ALONG WITH TIMESTAMP.
+6) COMPLETELY RESPONSIVE AND BEGINNER FRIENDLY.
+7) SIMPLE AND CATCHY UI.
+8) AWESOME POPUP FORM WITH TRANSITION EFFECTS.

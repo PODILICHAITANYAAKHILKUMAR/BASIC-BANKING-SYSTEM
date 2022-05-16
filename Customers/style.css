@@ -1,0 +1,293 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+.container .navbar{
+    background:#4caf50;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    padding:.5rem 1.5rem;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+    transition:all .5s;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.container .main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap:1rem;
+
+}
+.container .main .details{
+    padding-top:1.5rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap:1rem;
+}
+.container .main .details .buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+}
+.container .main .details .buttons button{
+    border:none;
+    outline:none;
+    cursor:pointer;
+    border-radius:1rem;
+    padding:.7rem 1rem;
+    background:#000;
+    color:#fff;
+    opacity:0.8;
+    transition:all .5s;
+    font-size:1.2rem;
+}
+.container .main .details .buttons button:hover{
+    opacity:1;
+}
+.container .main #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width:1000px;
+}
+#customers td, #customers th {
+border: 1px solid #ccc;
+padding: 1rem 1.5rem;
+font-size:1.3rem;
+font-weight:bold;
+}
+
+#customers tr:nth-child(even){
+    background-color: #ddd;
+}
+
+#customers tr:hover {
+    background-color: #aaa;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+/* The modal1 (background) */
+.modal1 {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* modal1 Content */
+.modal1-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    transition:all 0.5s;
+
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+#close1,#close2 {
+    color: #000;
+    float: right;
+    font-weight: bold;
+    margin:-1rem 1.8rem -1rem 0rem;
+    transition:all .5s;
+    font-size:2.5rem;
+    font-weight:bold;
+}
+
+#close1:hover,
+#close1:focus,#close2:hover,
+#close2:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal1-body .content{
+    padding: 1rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap:1.5rem 0;
+    margin-top:1.5rem;
+}
+.modal1-body input{
+    color:#000;
+    border:none;
+    outline:none;
+    width:58%;
+    padding:1rem;
+    border-bottom:1px solid #000;
+    transition:all .1s;
+    font-size:1.2rem;
+}
+.modal1-body input:focus{
+    border-bottom:3px solid red;
+}    
+.modal1-body input::placeholder{
+    font-weight:bold;
+    font-size:1.2rem;
+}
+.modal1-body .sendMoneyButton{
+    border:none;
+    outline:none;
+    background:#000;
+    color:#fff;
+    cursor:pointer;
+    opacity:0.8;
+    transition:all .5s;
+    padding:.6rem .7rem ;
+    border-radius:1rem;
+    font-size:1.5rem;
+    letter-spacing:.1rem;
+}
+.modal1-body .sendMoneyButton:hover{
+    opacity:1;
+}
+
+/* The modal2 (background) */
+.modal2 {
+    display: none;  
+     position: fixed; /* Stay in place */
+     z-index: 1; /* Sit on top */
+     padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+     width: 100%; /* Full width */
+     height: 100%; /* Full height */
+     overflow: auto; /* Enable scroll if needed */
+     background-color: rgb(0,0,0); /* Fallback color */
+     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+ /* modal2 Content */
+.modal2-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    transition:all 0.5s;
+
+}
+.modal2-body .content{
+    padding: 1rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap:1.5rem 0;
+    margin-top:1.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .container .main #customers {
+        max-width:800px;
+        width:100%;
+
+    }   
+    #customers td, #customers th {
+        padding: 1rem;
+        font-size:1rem;
+    }
+        
+}
+
+@media screen and (max-width: 850px) {
+    .container .main #customers {
+        max-width:650px;
+        width:100%;
+    }          
+}
+
+@media screen and (max-width: 800px) {
+    .container .main #customers {
+        max-width:550px;
+        width:100%;
+    }   
+    #customers td, #customers th {
+        padding: 1rem;
+        font-size:1rem;
+    }
+        
+}
+@media screen and (max-width: 768px) {
+    .container .main #customers {
+        max-width:500px;
+        width:100%;
+    }   
+    .container .main .details .buttons{
+        display:flex;
+        flex-direction:column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container .main #customers {
+        max-width:350px;
+        width:100%;
+    }   
+    
+}
+@media screen and (max-width: 480px) {
+    .container .main #customers {
+        max-width:300px;
+        width:100%;
+    }   
+        
+}
